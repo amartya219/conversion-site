@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+</style>
+
+<p>Page 1 [Home] </p>
+<p>Conversion Site </p>
+
+<body>
+
+<div class="">
+
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="#Conversion Rate">Conversion Rate</a>
+    <a href="#History">History</a>
+  </div>
+</div>
+<p>
+  <label>Feet</label>
+  <input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+</p>
+<p>Inches: <span id="outputInches"></span></p>
+
+<script>
+function LengthConverter(valNum) {
+  document.getElementById("outputInches").innerHTML=valNum*12;
+}
+
+</body>
+</html>
+
